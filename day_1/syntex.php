@@ -12,7 +12,7 @@
     $result = $frist_number-$last_number;
   }
   else if($btn == '*'){
-    $result = $frist_number-$last_number;
+    $result = $frist_number*$last_number;
   }
   else if($btn == '/'){
     $result = $frist_number/$last_number;
@@ -28,7 +28,7 @@
     </tr>
     <tr>
     <td>Last number</td>
-     <td><input type="text" name="last_number"></td>
+     <td><input type="text" name="<?php if(isset($_POST['last_number'])){echo $_POST['last_number'];}?>"></td>
     </tr>
     <tr>
       <td>value</td>
